@@ -1,0 +1,14 @@
+
+html, body, #root { height:100%; margin:0 }
+.app { display:flex; height:100vh; min-height:0 }
+.map { flex:1; min-height:0; position:relative }
+.panel { width:340px; padding:16px; background:#f7f7f7; overflow:auto; box-sizing:border-box }
+.leaflet-container { height:100%; width:100%; display:block }
+
+/* ensure leaflet controls and tiles render correctly */
+.leaflet-control-container { z-index: 1000 }
+.leaflet-pane, .leaflet-tile, .leaflet-layer { box-sizing: border-box }
+
+/* Typography */
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial }
+
